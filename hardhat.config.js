@@ -4,6 +4,8 @@ require("@nomiclabs/hardhat-etherscan");
 const ethers = require('ethers');
 const credentials = require('./credentials.js');
 
+// IMPORTANT: in production use .env or .secret for credentials
+
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
