@@ -1,9 +1,4 @@
-# myVault 60/40 Crypto Strategy Vault
-
-This code base was created as part of an intermediate solidity tutorial available here:
-
-https://jamesbachini.com/intermediate-solidity-tutorial/
-
+# CryptoVault 60/40 Crypto Strategy Vault
 
 The idea for the vault is to accept funds and then rebalance back to a 60% ETH 40% DAI stablecoins
 
@@ -21,4 +16,6 @@ npx hardhat test --network local
 npx hardhat run scripts/deploy.js --network kovan
 ```
 
-More info and solidity tutorials on my blog at https://jamesbachini.com
+This code base was modified as part of an intermediate solidity tutorial available here:
+
+https://jamesbachini.com/intermediate-solidity-tutorial/

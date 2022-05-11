@@ -1,18 +1,12 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.0;
 
-/*
-@title myVault
-@license GNU GPLv3
-@author James Bachini
-@notice A vault to automate and decentralize a long term donation strategy
-*/
 import "hardhat/console.sol";
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
-import '@uniswap/v3-periphery/contracts/interfaces/ISwapRouter.sol';
-import '@uniswap/v3-periphery/contracts/interfaces/IQuoter.sol';
+import "@uniswap/v3-periphery/contracts/interfaces/ISwapRouter.sol";
+import "@uniswap/v3-periphery/contracts/interfaces/IQuoter.sol";
 
 // EACAggregatorProxy is used for chainlink oracle
 interface EACAggregatorProxy {
@@ -29,7 +23,7 @@ interface DepositableERC20 is IERC20 {
   function deposit() external payable;
 }
 
-contract myVault {
+contract SampleVault {
   uint public version = 1;
   /* Kovan Addresses */
   address public daiAddress = 0x4F96Fe3b7A6Cf9725f59d353F723c1bDb64CA6Aa;
