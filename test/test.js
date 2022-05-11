@@ -4,6 +4,7 @@ const assert = require('chai').assert;
 describe('myVault', () => {
   let myVault;
 
+  // get fresh contract before each test 
   beforeEach(async function () {
     const contractName = 'myVault';
     await hre.run("compile");
